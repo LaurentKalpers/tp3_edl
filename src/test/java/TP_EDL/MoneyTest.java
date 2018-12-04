@@ -17,6 +17,7 @@ public class MoneyTest {
 
         assertEquals(money1.getmAmmount(),200);
         assertNotEquals(money2.getmAmmount(),-241);
+        assertNotEquals(money2.getmAmmount(),50);
     }
 
     @Test
