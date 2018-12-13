@@ -10,7 +10,6 @@ public class Money {
         }
         this.mCurrency = mCurrency;
     }
-
     public int getmAmmount() {
         return mAmmount;
     }
@@ -42,3 +41,5 @@ public class Money {
         }
     }
 }
+
+

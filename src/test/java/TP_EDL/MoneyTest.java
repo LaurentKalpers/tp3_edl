@@ -6,16 +6,13 @@ import static org.junit.Assert.*;
 
 public class MoneyTest {
 
-    /*Money money1 = new Money(200, "EUR");
-    Money money2 = new Money(50, "EUR");
-    Money money3 = new Money(75, "USD");*/
-
     @Test
     public void getmAmmount() {
         Money money1 = new Money(200, "EUR");
         Money money2 = new Money(-241, "EUR");
 
         assertEquals(money1.getmAmmount(),200);
+        assertEquals(money2.getmAmmount(),0);
         assertNotEquals(money2.getmAmmount(),-241);
         assertNotEquals(money2.getmAmmount(),50);
     }
@@ -47,7 +44,10 @@ public class MoneyTest {
         assertEquals(money1.getmAmmount(),260);
         money1.add(60,"USD");
         assertNotEquals(money1.getmAmmount(),320);
+        money1.add(-50,"EUR");
+        assertEquals(money1.getmAmmount(),210);
         money1.add(-500,"EUR");
         assertEquals(money1.getmAmmount(),0);
     }
 }
+

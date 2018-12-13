@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="tp3_edl" />
         <module name="TP_EDL_Kalpers_L" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tp3_edl" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

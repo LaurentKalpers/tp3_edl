@@ -15,3 +15,4 @@ public class Rect_aireTest {
         assertEquals(airerect.aire(),vrai_aire);
     }
 }
+
